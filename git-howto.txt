@@ -1,0 +1,14 @@
+Existing project:
+-------------------
+git init
+echo "node_modules" >> .gitignore  OR add .gitignore file manually
+git add *
+git commit -m "first commit"
+git remote add origin https://github.com/MichalYosef/****************.git
+git push -u origin master
+
+
+
+
+git clone
+composer install
