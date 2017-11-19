@@ -1,0 +1,37 @@
+npm init
+
+npm install angular@latest --save
+
+npm install http-server --save-dev
+
+npm install bootstrap --save
+
+edit 'scripts' section in package.json:
+ "start": "http-server ./ -p 8000",
+
+npm start
+
+add app folder to root dir
+inside app add index.html 
+in index.html: 
+
+<html lang="en" ng-app="app-name">
+<head>
+    <script src="../node_modules/angular/angular.min.js"></script>
+    <script src="myScript.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     
+    
+</head>
+
+
+open project on server: http://localhost:8000/
+
+
+
+
+-----------------------------------------------------
+(git init)
