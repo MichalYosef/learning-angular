@@ -1,0 +1,42 @@
+<html lang="en" ng-app="app4" ng-cloak>
+    <head>
+        <title>Learnning  Angular (4) js from Derek Banas Tutorial on youtube    </title>
+        <style>
+            [ng\:cloack], [ng-cloack], .ng-cloack{
+                display: none;
+            }
+            .blueText{
+                color:blue;
+            }
+            .boldText{
+                font-weight: bold;
+            }
+            .strippedBlue{
+                color:#007FFF;
+                background-color: #DBE9F4;
+            }
+            .strippedBeige{
+                color:#CC0000;
+                background-color: #F5F5DC;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div ng-controller="eventCtrl">
+
+            <input ng-blur='blur = blur + 1' />
+
+            <h4>Blur Events: {{blur}} </h4>
+
+
+        </div>
+        
+
+
+        
+
+        <script src="../node_modules/angular/angular.min.js"></script>
+        <script src="js/angular4.js"></script>
+    </body>    
+</html>

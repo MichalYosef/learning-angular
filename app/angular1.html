@@ -1,0 +1,45 @@
+<html lang="en" ng-app="app1" ng-init="person = {fName: 'David', lName: 'Chai'}; capitals = [{city:'Jerusalem', state: 'Israel'}, {city:'Tiberias', state: 'Israel'}, {city:'Haifa', state: 'Israel'}]">
+    <head>
+       <title>Learnning Angular js from Derek Banas Tutorial on youtube    </title>
+        <!-- <script src='../node_modules/angular-route/angular-route.min.js'></script>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+            
+    </head>
+    <body>
+
+        <div ng-controller="ctrl1"> <!-- this is the view of the mvc-->
+            <span>Values:</span>
+            <input type="text" ng-model="first"/>
+            <input type="text" ng-model="second"/>
+
+            <button ng-click="updateUalue()">Sum</button>
+            <br><br>
+            {{calculation}}
+
+            <P> 5 + 5 = {{ 5+5 }} </P>
+            <P> Your first value is {{ first }} </P>
+            <P> Your second value is 
+                <span data-ng-bind='second'></span> 
+            </P>
+            <p>
+                {{person.fName + " " + person.lName}} You entered {{ first + " and " + second}}
+            </p>
+
+            <ul>
+                <li ng-repeat="capital in capitals">
+                    {{'City: ' + capital.city + ', State: ' + capital.state}}
+                </li>
+            </ul>
+
+
+        </div>
+
+
+        
+
+        <script src="../node_modules/angular/angular.min.js"></script>
+        <script src="js/angular1.js"></script>
+    </body>    
+</html>
